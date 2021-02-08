@@ -1,0 +1,37 @@
+{% extends template %} <!-- Загружаем шаблон в который будет вставлять между % block content  %
+    и % endblock  % другие любые шаблоны, также адреса шаблонов можно загружать через словарь Context -->
+{% block content  %}
+
+{% for page_part in before_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+{% load static %} 
+<div id="category"> 
+    <div id="cathead">
+        <div id="namepage" class="text">
+            <h2>{{title}}</h2>
+            <a name="toparticle"></a>
+        </div>
+    </div>
+
+    <div id="main-info" class="text weith">
+        <div class="images">
+            <img class="img-link" src="{%  static 'picture/reviews/rv_1.jpg' %}" alt="" >
+            <img class="img-link" src="{%  static 'picture/reviews/rv_2.jpg' %}" alt="" >
+            <img class="img-link" src="{%  static 'picture/reviews/rv_3.jpg' %}" alt="" >
+            <img class="img-link" src="{%  static 'picture/reviews/rv_4.jpg' %}" alt="" >
+        </div>
+            
+        <div id="image-viewer">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="full-image">
+        </div>
+        <!-- <img class="image-to-cut" src="{%  static 'picture/way.jpg' %}" > -->
+    </div>
+</div>
+
+{% for page_part in after_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+
+{% endblock  %}

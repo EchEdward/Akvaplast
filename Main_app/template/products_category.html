@@ -1,0 +1,45 @@
+{% extends template %} <!-- Загружаем шаблон в который будет вставлять между % block content  %
+    и % endblock  % другие любые шаблоны, также адреса шаблонов можно загружать через словарь Context -->
+{% block content  %}
+
+{% for page_part in before_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+{% load static %} 
+<div id="category"> 
+    <div id="cathead">
+        <div id="namepage" class="text">
+            <h1>Товары</h1>
+        </div>
+        <div id="phoneshelp">
+            <table class="text">
+                <tr>
+                    <td>Консультация специалиста</td>
+                    <td id="cellmidle">+375 (44) 5 934 944</td>
+                    <td id="cellright">+375 (17) 510 90 12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% for category in categories  %} 
+        <div class="onecat">
+            <img class="catimg" src="{%  static category.img %}" width="180px", height="180px">
+            <span class="text cattext">{{category.name}}</span>
+            <div class="dropdown-content">
+                {% for group in category.group  %} 
+                    <a class="text" href="/products/group_{{group.name_group}}/">{{group.name_group}}</a>
+                {% endfor %}
+            </div>
+            
+        </div>
+    {% endfor %}
+
+    {% include Teg_a_sp.temp %} 
+
+</div>
+
+{% for page_part in after_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+
+{% endblock  %}

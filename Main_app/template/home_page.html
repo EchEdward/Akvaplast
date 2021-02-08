@@ -1,0 +1,257 @@
+{% extends template %} <!-- Загружаем шаблон в который будет вставлять между % block content  %
+    и % endblock  % другие любые шаблоны, также адреса шаблонов можно загружать через словарь Context -->
+{% block content  %}
+
+{% for page_part in before_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+{% load static %} 
+<div id="main_info">
+    <div id="TextWithSlider">
+        <div id="slider">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="carousel-item">
+                        <img  src="{% static 'picture/new_slider/APrrRg4CNTt1.jpg' %}">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/DjSJ8CU84qJlt.jpg' %}" >
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/BSSG4Dfr8zyrY.jpg' %}" >
+                        <div class="carousel_text text">
+                            <h2>ЛЮКИ ЧУГУННЫЕ ПОЧТИ БЕСПЛАТНО</h2>
+                            <p>Новинка! Чугунные люки по очень низким ценам! От 5шт привезем бесплатно!!!</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/wlHdedYsWQN.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ТРУБЫ ПВХ</h2>
+                            <p>Всегда в наличии все диаметры с любой кольцевой жёсткостью, бесплатная доставка на объект.</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/3Qb0sYEW2lG8IBo4.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ТРУБЫ ПОЛИЭТИЛЕНОВЫЕ</h2>
+                            <p>Используются для прокладки наружных сетей водоснабжения, поставляются как в отрезках, так и в бухтах.</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-6" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/mJv23qWkx3Xy.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ТРУБА ДРЕНАЖНАЯ</h2>
+                            <p>Покупайте только белорусскую дренажную трубу!</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-7" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/ieACnFEuaRrzxC.jpg' %}">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-8" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/K2saf7bxDMv.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>КРУГИ ОТРЕЗНЫЕ</h2>
+                            <p>В наличии круги отрезные, шлифовальные, лепестковые всех диаметров.</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-9" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/6lZwkuKt9BR.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ПРОВОЛОКА СВАРОЧНАЯ СВ08Г2С</h2>
+                            <p>Мы являемся первыми поставщиками сварочной проволоки в РБ. При покупке от 50 кг бесплатная доставка в любую точку г.Минска.</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-10" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/Ik6781jX3ksxuAu.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ЛЮКИ ПЛАСТИКОВЫЕ. БЕСПЛАТНО ПРИВЕЗЕМ ОТ 5 ШТ!</h2>
+                            <p>Всегда в наличии полимерно-композитные люки от легких до тяжелых. Скидки!!!</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-11" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/IXsCWxQ4paBxMFS.jpg' %}">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-12" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/HWLKWmiYSw.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ДЕТАЛИ ТРУБОПРОВОДОВ</h2>
+                            
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-13" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/yZjA1v0BqktN6Xv.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ЗАПОРНАЯ АРМАТУРА</h2>
+
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-14" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/EdTiFzIXQJ.jpg' %}">
+                        <div class="carousel_text text">
+                            <p>ПАВАЖАНЫЯ КЛIЕНТЫ! МЫ РАДЫЯ ВАМ АБ'ЯВІЦЬ, ШТО ПАДЧАС ВЫХАДНЫХ БУДЗЕМ СТАРАЦЦА ВЫКАНАЦЬ АДГРУЗКІ ПРЫ СУМЕ ЧЭКА АД 150 РУБ. І БОЛЬШ! ТЭЛЕФАНУЙЦЕ ЗАГАДЗЯ ПА НУМАРЫ +375 44 5 334 944!</p>
+                        </div>
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-15" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="{%  static 'picture/new_slider/rvg8xD3Mj4gX.jpg' %}">
+                        <div class="carousel_text text">
+                            <h2>ЛОТКИ ВОДООТВОДНЫЕ</h2>
+                            <p>Поможем выбрать!</p>
+                        </div>
+                    </div>
+                    
+                    <label for="carousel-15" class="carousel-control prev control-1">‹</label>
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-4" class="carousel-control next control-3">›</label>
+                    <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+                    <label for="carousel-5" class="carousel-control next control-4">›</label>
+                    <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+                    <label for="carousel-6" class="carousel-control next control-5">›</label>
+                    <label for="carousel-5" class="carousel-control prev control-6">‹</label>
+                    <label for="carousel-7" class="carousel-control next control-6">›</label>
+                    <label for="carousel-6" class="carousel-control prev control-7">‹</label>
+                    <label for="carousel-8" class="carousel-control next control-7">›</label>
+                    <label for="carousel-7" class="carousel-control prev control-8">‹</label>
+                    <label for="carousel-9" class="carousel-control next control-8">›</label>
+                    <label for="carousel-8" class="carousel-control prev control-9">‹</label>
+                    <label for="carousel-10" class="carousel-control next control-9">›</label>
+                    <label for="carousel-9" class="carousel-control prev control-10">‹</label>
+                    <label for="carousel-11" class="carousel-control next control-10">›</label>
+                    <label for="carousel-10" class="carousel-control prev control-11">‹</label>
+                    <label for="carousel-12" class="carousel-control next control-11">›</label>
+                    <label for="carousel-11" class="carousel-control prev control-12">‹</label>
+                    <label for="carousel-13" class="carousel-control next control-12">›</label>
+                    <label for="carousel-12" class="carousel-control prev control-13">‹</label>
+                    <label for="carousel-14" class="carousel-control next control-13">›</label>
+                    <label for="carousel-13" class="carousel-control prev control-14">‹</label>
+                    <label for="carousel-15" class="carousel-control next control-14">›</label>
+                    <label for="carousel-14" class="carousel-control prev control-15">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-15">›</label>
+                    <ol class="carousel-indicators">
+                        <li><label for="carousel-1" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-2" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-3" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-4" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-5" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-6" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-7" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-8" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-9" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-10" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-11" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-12" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-13" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-14" class="carousel-bullet">•</label></li>
+                        <li><label for="carousel-15" class="carousel-bullet">•</label></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="dicrube" class="text">
+            Интернет-магазин сантехнической продукции "БелАкваПласт"
+            <br>Паважаныя клiенты! Мы радыя Вам аб'явіць, што падчас выхадных будзем старацца выканаць адгрузкі пры суме чэка ад 150 руб. і больш!
+            <br>Тэлефануйце па нумары +375 44 5 334 944!
+            <br>Дорогие клиенты! Спешим сообщить Вам об акции! Бесплатная доставка любой сварочной продукции от 50 кг по г. Минск в течение 2-3 дней!!! От 100 кг в течение одного дня! Постоянным и хорошим ♥ клиентам возможна отсрочка платежа!!!
+            <br>Падпісвайцеся на наш адзіны ў Беларусі беларускамоўны сантэхнічны Інстаграм!
+        </div>
+    </div>
+    <div id="NewAndMap">
+        <div id="NewOffers">
+            <div class="offer">
+                <div class="offertype text">
+                    <p>Рекомендуем</p> 
+                </div>
+                <a class="text links offerlinks" href="/products/product-item_{{recomend.id}}/#topproduct" 
+                    title="{{recomend.name}}">
+                    <p>{{recomend.name}}</p>
+                </a>
+                <img class="offerimg" src="{%  static recomend.imgPath %}" width="150px", height="150px">
+                
+            </div>
+            <div class="offer">
+                <div class="offertype text">
+                    <p>Новые поступления</p> 
+                </div>
+                <a class="text links offerlinks" href="/products/product-item_{{new.id}}/#topproduct" 
+                    title="{{new.name}}">
+                    <p>{{new.name}}</p>
+                </a>
+                <img class="offerimg" src="{%  static new.imgPath %}" width="150px", height="150px"> 
+            </div>
+
+        </div>
+        <div id="map"></div>
+    </div>
+    <div id="advantages">
+        <div id="triangle1"></div>
+        
+        <table id="tbl" class="text">
+            <tr>
+                <td colspan="3" id="headtable"><h1>Наши преимущества</h1></td>
+            </tr>
+            <tr>
+                <td class="advcell">Бесплатная доставка</td>
+                <td class="advcell">Компетентные и вежливые сотрудники</td>
+                <td class="advcell">Розничная торговля</td>
+            </tr>
+            <tr>
+                <td class="advcell">Наличие продукции на складе</td>
+                <td class="advcell">Техническия консультация</td>
+                <td class="advcell">Поставка изготовление продукции под заказ</td>
+            </tr>
+            <tr>
+                <td class="advcell">Полная комплектация трубопровода</td>
+                <td class="advcell">Совершенная система скидок</td>
+                <td class="advcell">Подбор продукции согласно проекта</td>
+            </tr>
+        </table>
+        <div id="triangle2"></div>
+        
+    </div>
+    <div id="interesting">
+        <div id="triangle3"></div>
+        <p id="intr" class="text">Вам будет интересно почитать:</p>
+        <div id="intrlinks">
+            <div class="intrblock">
+                <a class="text links intrlinks" href="/articles/article-item_{{articles.article1.id}}/#toparticle" 
+                    title="{{articles.article1.name}}">
+                    <p>{{articles.article1.name}}</p>
+                </a>
+                <img class="intrimg" src="{%  static articles.article1.imgPath %}" width="150px", height="150px">
+            </div>
+            <div class="intrblock">
+                <a class="text links intrlinks" href="/articles/article-item_{{articles.article2.id}}/#toparticle" 
+                    title="{{articles.article2.name}}">
+                    <p>{{articles.article2.name}}</p>
+                </a>
+                <img class="intrimg" src="{%  static articles.article2.imgPath %}" width="150px", height="150px">
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+{% for page_part in after_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+
+{% endblock  %}

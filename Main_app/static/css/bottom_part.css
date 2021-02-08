@@ -1,0 +1,50 @@
+#btn_part {
+    margin-top: 20px;
+    width: inherit;
+    height: 180px;
+    background-color: #3D3D3D;
+    margin-bottom: 20px;
+    color: #C0C0C0;
+    font-weight: 300;
+}
+
+.fa-instagram{
+    color: #C0C0C0;
+    font-size: 50px;
+}
+
+#logoback div{
+    background-color: #C0C0C0;
+    padding: 10px;
+    padding-left: 20px;
+    width: 296px;
+}
+
+#adrnum {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+#logoback {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#rights {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    bottom: -30%;
+}
+
+#inst {
+    position: relative;
+    float: left;
+    left: 22%;
+    top:16%;
+}

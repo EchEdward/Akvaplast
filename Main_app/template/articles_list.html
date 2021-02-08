@@ -1,0 +1,38 @@
+{% extends template %} <!-- Загружаем шаблон в который будет вставлять между % block content  %
+    и % endblock  % другие любые шаблоны, также адреса шаблонов можно загружать через словарь Context -->
+{% block content  %}
+
+{% for page_part in before_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+{% load static %} 
+<div id="category"> 
+    <div id="cathead">
+        <div id="namepage" class="text">
+            <h2>{{title}}</h2>
+        </div>
+    </div>
+
+    {% for article in articles  %} 
+            <a class="article text"
+            title="{{article.name}}"
+            href="/articles/article-item_{{article.id}}/#toparticle">
+                <div class="cut-image">
+                    <img class="image-to-cut" src="{%  static article.imgPath %}" >
+                </div>
+                <span>{{article.name}}</span>
+            </a>
+            
+    {% endfor %}
+
+    {% include Teg_a_sp.temp %}
+
+    
+
+</div>
+
+{% for page_part in after_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+
+{% endblock  %}

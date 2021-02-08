@@ -1,0 +1,57 @@
+{% extends template %} <!-- Загружаем шаблон в который будет вставлять между % block content  %
+    и % endblock  % другие любые шаблоны, также адреса шаблонов можно загружать через словарь Context -->
+{% block content  %}
+
+{% for page_part in before_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+{% load static %} 
+<div id="category"> 
+    <div id="cathead">
+        <div id="namepage" class="text">
+            <h3>{{title}}</h3>
+        </div>
+        <div id="phoneshelp">
+            <table class="text">
+                <tr>
+                    <td>Консультация специалиста</td>
+                    <td id="cellmidle">+375 (44) 5 934 944</td>
+                    <td id="cellright">+375 (17) 510 90 12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="prodcontent" class="text">
+        <a name="topproduct"></a>
+        <h2>{{productinfo.name}}</h2>
+        <div class="cut-image">
+            <img class="image-to-cut" src="{%  static productinfo.imgPath %}" >
+        </div>
+        <span class="text model">Модель: {{productinfo.mod}}</span>
+        {% if productinfo.availability %}
+            <span class="text availability greened">В наличии</span>
+        {% else %}
+            <span class="text availability reded">Нет в наличии</span>
+        {% endif %}
+        {% if productinfo.promotion %}
+            <span class="text productprise greened">Цена: {{productinfo.prise}}</span>
+        {% else %}
+            <span class="text productprise">Цена: {{productinfo.prise}}</span>
+        {% endif %}
+        <div id="prdescription">
+            {% for string in productdescribe %}
+                {{string}} <br>
+            {% endfor %}
+        </div>
+
+    </div>
+    
+
+</div>
+
+{% for page_part in after_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+
+{% endblock  %}

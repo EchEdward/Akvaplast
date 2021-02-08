@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(102, 146 ,185, 1);
+    margin: 0px; /* Убираем внешние отступы */
+    padding: 0px; /* Убираем внутренние отступы */
+    
+    
+}
+
+img {
+    box-shadow: none;
+}
+
+a {
+    /* color: #000 !important; */
+    text-decoration: none
+}
+
+.links {
+    color: #000 !important;
+}
+
+#wrapper{
+    /*position: absolute; /* Относительное позиционирование */
+    /* float: left; */
+    /*border: 1px solid #000;  /* Внешнея граница вокруг блока div */
+    width: 1100px; /* Ширина блока div */
+    min-height: 950px; /* Минимальная высота блока */
+    /*margin-left: -550px; /* Внешний левый отступ. Отрицательное значение означает, что блок выходит за левого края браузера на 500px */
+    /*left: 50%; /* Позиционирование относительно левого края окна браузера */
+    /* transform: translate(-50%, 0); */
+    /*background-color: #7AB8E9; /* Цвет фона для блока */
+    margin: auto; 
+    padding-bottom: 1px;
+}
+

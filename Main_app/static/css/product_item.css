@@ -1,0 +1,126 @@
+#category {
+    background-color: #4D5E71;
+    margin-top: 5px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#phoneshelp {
+    background-color: #3B3B3B;
+    height: 120px;
+    color: #C0C0C0;
+    font-size: 24px;
+    font-weight:50;
+    width: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+#phoneshelp table {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+#cellmidle {
+    text-align: center;
+}
+#cellright {
+    text-align: right;
+}
+
+#namepage {
+    width: 0;
+	height: 0;
+	border-bottom: 100px solid #C0C0C0; 
+	border-right: 1100px solid transparent;
+}
+
+#namepage h3 {
+    position: relative;
+    width: 100%;
+    float: left;
+    top: 40px;
+    left: 20px;
+    white-space:nowrap;
+}
+
+#prodcontent {
+    background-color: #C0C0C0;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+}
+
+.cut-image {
+    width: 550px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    
+}
+  
+.image-to-cut {
+    position: absolute;
+    height: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#prodcontent h2 {
+    position: absolute;
+    left: 610px;
+    width:350px;
+
+    overflow:  hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden; 
+}
+
+.model {
+    position: absolute;
+    left: 610px;
+    width:350px;
+    top:180px;
+    font-size: 18px;
+
+    overflow:  hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+
+.greened {
+    color: green;
+}
+.reded {
+    color: red;
+}
+
+.availability {
+    position: absolute;
+    left: 610px;
+    top:340px;
+    font-size: 18px;
+}
+
+.productprise {
+    position: absolute;
+    left: 610px;
+    top:310px;
+    font-size: 24px;
+}
+
+#prdescription {
+    font-size: 18px;
+    padding: 20px;
+
+}

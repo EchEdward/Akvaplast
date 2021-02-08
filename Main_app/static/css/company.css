@@ -1,0 +1,39 @@
+#category {
+    background-color: #4D5E71;
+    margin-top: 5px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#namepage {
+    width: 0;
+	height: 0;
+	border-bottom: 100px solid #C0C0C0; 
+	border-right: 1100px solid transparent;
+}
+
+#namepage h2 {
+    position: relative;
+    width: 100%;
+    float: left;
+    top: 40px;
+    left: 20px;
+    white-space:nowrap;
+}
+
+#main-info {
+    margin: 20px;
+}
+
+.weith {
+    font-weight: 500;
+}
+
+.image-to-cut {
+    /* position: absolute; */
+    position: relative;
+    max-width: 900px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

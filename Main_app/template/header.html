@@ -1,0 +1,70 @@
+{% load static %} 
+<div id="header1p">
+    <div class="header1c">
+        <a href="/">
+            <img src="{% static 'picture/logo.png' %}" width="266" / class="image shadow brdrad">
+        </a>    
+    </div> 
+    <div class="text header1c">
+        <form action="" method="POST"> 
+            {{form.search}}
+            <button id="search_btn" type="submit"></button>
+        </form>
+    </div>
+    <div class="header1c">
+        <a download id="prise" class="text" href="{% static 'other/Прайс сайт Аквапласт.xlsx' %}">
+            Прайс
+            <i class="fa fa-file-o" aria-hidden="true"> </i>
+        </a> 
+    </div>
+    <div class="text header1c phones">
+        +375 17 510-93-63(сантехника)
+        <br>+375 44 5-334-944(сантехника)
+        <br>+375 44 5-934-944(сварка)
+        <br>+375 17 510-90-12(сварка)
+    </div>
+</div>
+
+<div id="header2p">
+    <div class="header2c">
+        <a class="headerlinks text links" href="/">
+            Главная
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/products/">
+            Товары
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/promotion/">
+            Акции
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/company/">
+            О компании
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/shipping_and_payment/">
+            Доставка и оплата
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/reviews/">
+            Отзывы
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/articles/">
+            Статьи
+        </a> 
+    </div>
+    <div class="header2c">
+        <a class="headerlinks text links" href="/contacts/">
+            Контакты
+        </a> 
+    </div>
+
+</div>

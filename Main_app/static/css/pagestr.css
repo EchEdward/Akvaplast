@@ -1,0 +1,59 @@
+.page,
+.pagenow{
+    /*font-family: "Segoe Script"; /* тип шрифта*/
+    /*font-style: italic; курсив*/
+    font-weight: 900; /* Жирность текста */
+    font-size: 20px;
+    display:inline-block;
+    padding: 3px;
+}
+.page:link, /* Цвет непосещенных ссылок */
+.page:visited{ /* Цвет посещенных ссылок */
+    text-decoration: none;
+    color: #000 ;
+    background-color: #C1C0C2;
+}
+.pagenow{ /* Цвет активных ссылок */
+    text-decoration: none;
+    background: #3D3D3D;
+    color: #C0C0C0 ;
+}
+.page:hover{ /* Цвет ссылок при наведении на них курсора мыши */
+    /* color: rgb(16, 173, 2); */
+    /*background: #86867c /* Цвет фона текста */
+    background: #3D3D3D;
+    color: #C0C0C0 ;
+}
+.pagestr{
+    text-align: center;    
+}
+
+.previous {
+    display:inline-block;
+    position: relative;
+    top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-right: 20px solid #C1C0C2;
+	border-bottom: 15px solid transparent;
+}
+
+.previous:hover {
+    border-right: 20px solid #3D3D3D;
+}
+
+.next {
+    display:inline-block;
+    position: relative;
+    top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 20px solid #C1C0C2;
+	border-bottom: 15px solid transparent;
+}
+
+.next:hover {
+    border-left: 20px solid #3D3D3D;
+}

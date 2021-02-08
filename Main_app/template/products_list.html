@@ -1,0 +1,60 @@
+{% extends template %} <!-- Загружаем шаблон в который будет вставлять между % block content  %
+    и % endblock  % другие любые шаблоны, также адреса шаблонов можно загружать через словарь Context -->
+{% block content  %}
+
+{% for page_part in before_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+{% load static %} 
+<div id="category"> 
+    <div id="cathead">
+        <div id="namepage" class="text">
+            <h2>{{title}}</h2>
+        </div>
+        <div id="phoneshelp">
+            <table class="text">
+                <tr>
+                    <td>Консультация специалиста</td>
+                    <td id="cellmidle">+375 (44) 5 934 944</td>
+                    <td id="cellright">+375 (17) 510 90 12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% for content in add_page_content%}
+        {% include content %} 
+    {% endfor %}
+    {% if notempty %}
+        {% for product in products  %} 
+            <a class="product"
+                title="{{product.name}}"
+                href="/products/product-item_{{product.id}}/#topproduct">
+                <img class="productimg" src="{%  static product.imgPath %}" width="180px", height="180px">
+                <span class="text productname">{{product.name}}</span>
+                {% if product.availability %}
+                    <span class="text availability greened">В наличии</span>
+                {% else %}
+                    <span class="text availability reded">Нет в наличии</span>
+                {% endif %}
+                {% if product.promotion %}
+                    <span class="text productprise greened">Цена: {{product.prise}}</span>
+                {% else %}
+                    <span class="text productprise">Цена: {{product.prise}}</span>
+                {% endif %}
+            </a>
+            
+        {% endfor %}
+
+        {% include Teg_a_sp.temp %}
+
+    {% else %}
+        <p id="notfound" class="text">Ничиго не найдено</p>
+    {% endif %}
+
+</div>
+
+{% for page_part in after_page_parts  %} 
+    {% include page_part %} 
+{% endfor %}
+
+{% endblock  %}

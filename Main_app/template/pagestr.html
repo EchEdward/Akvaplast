@@ -1,0 +1,9 @@
+<p class="pagestr text">
+    {% for i in Teg_a_sp.lst %}   
+        {% ifequal i.0 "..." %}
+            ...
+        {% else %}
+            <a class="{{ i.2 }}" href="{{i.0}}">{{i.1}}</a>
+        {% endifequal %}
+    {% endfor %}
+</p>

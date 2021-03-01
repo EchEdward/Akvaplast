@@ -9,7 +9,7 @@
 #phoneshelp {
     background-color: #3B3B3B;
     height: 120px;
-    color: #C0C0C0;
+    color: #929AAC; /* #C0C0C0 */
     font-size: 24px;
     font-weight:50;
     width: inherit;
@@ -32,7 +32,7 @@
 #namepage {
     width: 0;
 	height: 0;
-	border-bottom: 100px solid #C0C0C0; 
+	border-bottom: 100px solid #929AAC; /*  #C0C0C0 */
 	border-right: 1100px solid transparent;
 }
 
@@ -52,7 +52,7 @@
     border: 1px solid #000;  /* Внешнея граница вокруг блока div */
     margin-left: 20px;
     margin-bottom: 20px;
-    background-color: #C4C4C2;
+    background-color: #929AAC; /* #C4C4C2 */
     color: #000 !important;
     position: relative;
 }

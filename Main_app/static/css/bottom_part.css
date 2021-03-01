@@ -4,17 +4,17 @@
     height: 180px;
     background-color: #3D3D3D;
     margin-bottom: 20px;
-    color: #C0C0C0;
+    color: #929AAC;/*#C0C0C0  */
     font-weight: 300;
 }
 
 .fa-instagram{
-    color: #C0C0C0;
+    color: #929AAC;/*#C0C0C0  */
     font-size: 50px;
 }
 
 #logoback div{
-    background-color: #C0C0C0;
+    background-color: #929AAC; /*#C0C0C0  */
     padding: 10px;
     padding-left: 20px;
     width: 296px;

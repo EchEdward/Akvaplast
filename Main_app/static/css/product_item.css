@@ -9,7 +9,7 @@
 #phoneshelp {
     background-color: #3B3B3B;
     height: 120px;
-    color: #C0C0C0;
+    color: #929AAC; /* #C0C0C0 */
     font-size: 24px;
     font-weight:50;
     width: inherit;
@@ -32,7 +32,7 @@
 #namepage {
     width: 0;
 	height: 0;
-	border-bottom: 100px solid #C0C0C0; 
+	border-bottom: 100px solid #929AAC;  /* #C0C0C0 */
 	border-right: 1100px solid transparent;
 }
 
@@ -46,7 +46,7 @@
 }
 
 #prodcontent {
-    background-color: #C0C0C0;
+    background-color: #929AAC; /* #C0C0C0 */
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;

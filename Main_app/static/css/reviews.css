@@ -1,5 +1,5 @@
 #category {
-    background-color: #4D5E71;
+    background-color: #929AAC;
     margin-top: 5px;
     border-radius: 6px;
     padding-top: 10px;
@@ -9,7 +9,7 @@
 #namepage {
     width: 0;
 	height: 0;
-	border-bottom: 100px solid #929AAC;  /* #C0C0C0 */
+	border-bottom: 100px solid #C0C0C0;  /* #C0C0C0 */
 	border-right: 1100px solid transparent;
 }
 

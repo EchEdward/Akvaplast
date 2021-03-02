@@ -11,18 +11,18 @@
 .page:visited{ /* Цвет посещенных ссылок */
     text-decoration: none;
     color: #000 ;
-    background-color: #929AAC; /* #C1C0C2 */
+    background-color: #C1C0C2; /* #C1C0C2 */
 }
 .pagenow{ /* Цвет активных ссылок */
     text-decoration: none;
     background: #3D3D3D;
-    color: #929AAC; /* #C0C0C0 */
+    color: #C0C0C0; /* #C0C0C0 */
 }
 .page:hover{ /* Цвет ссылок при наведении на них курсора мыши */
     /* color: rgb(16, 173, 2); */
     /*background: #86867c /* Цвет фона текста */
     background: #3D3D3D;
-    color: #929AAC ; /* #C0C0C0 */
+    color: #C0C0C0 ; /* #C0C0C0 */
 }
 .pagestr{
     text-align: center;    

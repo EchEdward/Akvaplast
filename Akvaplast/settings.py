@@ -31,7 +31,7 @@ DEBUG = True
 # Для доступа через ip компа в сети нужно добавить ip в ALLOWED_HOSTS  
 # И запустить сервер следующей командой: python manage.py runningerver 0.0.0.0:8000
 # Чтоб узнать свой Ip нужно вести в терминал команду: ipconfig /all
-ALLOWED_HOSTS = []#"192.168.100.2"
+ALLOWED_HOSTS = ['80.249.148.11']#"192.168.100.2"
 
 
 # Application definition
